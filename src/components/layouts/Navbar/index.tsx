@@ -8,17 +8,19 @@ type Props = {};
 export function Navbar({}: Props) {
   return (
     <Container className="flex flex-row justify-between items-center py-6">
-      <Link href="/">
-        <Image src="/images/logo2.png" alt="logo" width={160} height={50} />
-      </Link>
+      <div className="inline-flex items-end gap-12">
+        <Link href="/">
+          <Image src="/images/logo2.png" alt="logo" width={160} height={50} />
+        </Link>
 
-      <div className="inline-flex gap-x-4">
-        <Link href="/" className="hover:text-primary transition-colors">
-          Find Jobs
-        </Link>
-        <Link href="/" className="hover:text-primary transition-colors">
-          Browse Companies
-        </Link>
+        <div className="inline-flex gap-x-4">
+          <Link href="/" className="hover:text-primary transition-colors">
+            Find Jobs
+          </Link>
+          <Link href="/" className="hover:text-primary transition-colors">
+            Browse Companies
+          </Link>
+        </div>
       </div>
 
       <div className="inline-flex gap-2">

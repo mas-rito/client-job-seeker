@@ -1,10 +1,10 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import { Container } from "@/components/atoms/container";
+import { HeroSection } from "@/components/organisms/heroSection";
 
 export default function Home() {
   return (
-    <div>
-      <Button>Hallo</Button>
-    </div>
+    <Container>
+      <HeroSection />
+    </Container>
   );
 }
