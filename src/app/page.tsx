@@ -2,6 +2,7 @@ import { Container } from "@/components/atoms/container";
 import { BannerStart } from "@/components/organisms/bannerStart";
 import { CategoriesSection } from "@/components/organisms/categoriesSection";
 import { ClientsSection } from "@/components/organisms/clientsSection";
+import { FeaturedJobsSection } from "@/components/organisms/featuredJobsSection";
 import { HeroSection } from "@/components/organisms/heroSection";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
         <ClientsSection />
         <CategoriesSection />
         <BannerStart />
+        <FeaturedJobsSection />
       </div>
     </Container>
   );
