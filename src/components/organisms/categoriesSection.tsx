@@ -8,7 +8,6 @@ export function CategoriesSection() {
       <TitleSection
         title="Explore by"
         span="category"
-        titleLink="Show all jobs"
         link="/"
         className="mb-14"
       />

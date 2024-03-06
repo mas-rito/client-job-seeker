@@ -4,6 +4,7 @@ import { CategoriesSection } from "@/components/organisms/categoriesSection";
 import { ClientsSection } from "@/components/organisms/clientsSection";
 import { FeaturedJobsSection } from "@/components/organisms/featuredJobsSection";
 import { HeroSection } from "@/components/organisms/heroSection";
+import { LatestJobsSection } from "@/components/organisms/latestJobsSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <CategoriesSection />
         <BannerStart />
         <FeaturedJobsSection />
+        <LatestJobsSection />
       </div>
     </Container>
   );

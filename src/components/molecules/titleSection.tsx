@@ -5,17 +5,10 @@ import * as React from "react";
 type Props = {
   title: string;
   span: string;
-  titleLink: string;
   link: string;
   className?: string;
 };
-export function TitleSection({
-  title,
-  span,
-  titleLink,
-  link,
-  className,
-}: Props) {
+export function TitleSection({ title, span, link, className }: Props) {
   return (
     <div className={`flex flex-row justify-between items-center ${className}`}>
       <h1 className="text-5xl font-semibold">
@@ -26,7 +19,7 @@ export function TitleSection({
         href={link}
         className="flex flex-row items-center gap-3 text-primary hover:gap-6 transition-all"
       >
-        {titleLink}
+        Show all jobs
         <MoveRight size={30} />
       </Link>
     </div>
