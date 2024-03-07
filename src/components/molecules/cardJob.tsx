@@ -18,7 +18,7 @@ export function CardJob({
   href,
 }: Props) {
   return (
-    <Link href={href} className="block border-2 border-gray-200 p-6">
+    <Link href={href!!} className="block border-2 border-gray-200 p-6">
       <div className="flex justify-between items-start mb-4">
         <Image src={image} alt="logo" width={50} height={50} />
         <Badge variant="secondary" className="py-1 px-2">

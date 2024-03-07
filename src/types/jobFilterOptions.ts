@@ -1,1 +1,1 @@
-export type JobFilterOptions = { id: string; label: string };
+export type FilterOptions = { id: string; label: string };

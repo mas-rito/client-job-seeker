@@ -1,5 +1,5 @@
 import { client } from "@/types/clients";
-import { JobFilterOptions } from "@/types/jobFilterOptions";
+import { FilterOptions } from "@/types/jobFilterOptions";
 
 export const clients: client[] = [
   {
@@ -32,29 +32,79 @@ export const LOCATION_OPTIONS: string[] = [
   "Vietnam",
 ];
 
-export const JOB_FILTER_OPTIONS: JobFilterOptions[] = [
+export const JOB_FILTER_OPTIONS: FilterOptions[] = [
   {
-    id: "recents",
-    label: "Recents",
+    id: "latest",
+    label: "Latest",
   },
   {
-    id: "home",
-    label: "Home",
+    id: "popular",
+    label: "Popular",
   },
   {
-    id: "applications",
-    label: "Applications",
+    id: "salary",
+    label: "Salary",
   },
   {
-    id: "desktop",
-    label: "Desktop",
+    id: "fullTime",
+    label: "Full Time",
   },
   {
-    id: "downloads",
-    label: "Downloads",
+    id: "partTime",
+    label: "Part Time",
   },
   {
-    id: "documents",
-    label: "Documents",
+    id: "internship",
+    label: "Internship",
+  },
+];
+export const INDUSTRY_OPTIONS: FilterOptions[] = [
+  {
+    id: "technology",
+    label: "Technology",
+  },
+  {
+    id: "advertising",
+    label: "Advertising",
+  },
+  {
+    id: "business",
+    label: "Business",
+  },
+  {
+    id: "blockchain",
+    label: "Blockchain",
+  },
+  {
+    id: "cloud",
+    label: "Cloud",
+  },
+  {
+    id: "fintech",
+    label: "Fintech",
+  },
+  {
+    id: "education",
+    label: "Education",
+  },
+  {
+    id: "consumerTech",
+    label: "Consumer Tech",
+  },
+  {
+    id: "healthcare",
+    label: "Healthcare",
+  },
+  {
+    id: "gaming",
+    label: "Gaming",
+  },
+  {
+    id: "foodBeverages",
+    label: "Food & Beverages",
+  },
+  {
+    id: "hosting",
+    label: "Hosting",
   },
 ];

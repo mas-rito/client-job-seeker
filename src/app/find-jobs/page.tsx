@@ -21,8 +21,30 @@ const dataDammy: JobFilter[] = [
     image: "/images/company.png",
     jobType: "Full Time",
     skills: ["React", "Javascript", "Typescript"],
-    applicants: 4,
-    needs: 10,
+    applicants: 3,
+    needs: 4,
+  },
+  {
+    id: "3",
+    roles: "UI Designer",
+    companyCategory: "Technology",
+    location: "Indonesia, Jakarta",
+    image: "/images/company.png",
+    jobType: "Full Time",
+    skills: ["Figma", "Design Thinking", "Design System"],
+    applicants: 1,
+    needs: 4,
+  },
+  {
+    id: "2",
+    roles: "Project Manager",
+    companyCategory: "Agency",
+    location: "Indonesia, Bandung",
+    image: "/images/company2.png",
+    jobType: "Full Time",
+    skills: ["Public Speaking", "Trello"],
+    applicants: 0,
+    needs: 2,
   },
 ];
 
@@ -53,7 +75,6 @@ export default function FindJobs() {
       </div>
       <Filter
         type="jobs"
-        name="categories"
         form={form}
         onSubmit={handleSubmit}
         data={dataDammy}

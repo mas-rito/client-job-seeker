@@ -8,20 +8,19 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { filterSchema } from "@/lib/formSchema/filterSchema";
-import { JobFilterOptions } from "@/types/jobFilterOptions";
+import { FilterOptions } from "@/types/jobFilterOptions";
 import * as React from "react";
 import { UseFormReturn } from "react-hook-form";
 import { z } from "zod";
 type Props = {
-  name: string;
-  items: JobFilterOptions[];
+  items: FilterOptions[];
   form: UseFormReturn<z.infer<typeof filterSchema | any>>;
 };
-export function CheckBox({ name, form, items }: Props) {
+export function CheckBox({ form, items }: Props) {
   return (
     <FormField
       control={form.control}
-      name={name}
+      name="categories"
       render={() => (
         <FormItem className="space-y-3">
           <div className="mb-4">
@@ -34,7 +33,7 @@ export function CheckBox({ name, form, items }: Props) {
             <FormField
               key={item.id}
               control={form.control}
-              name={name}
+              name="categories"
               render={({ field }) => {
                 return (
                   <FormItem
