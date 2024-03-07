@@ -14,10 +14,16 @@ export function Navbar({}: Props) {
         </Link>
 
         <div className="inline-flex gap-x-4">
-          <Link href="/" className="hover:text-primary transition-colors">
+          <Link
+            href="/find-jobs"
+            className="hover:text-primary transition-colors"
+          >
             Find Jobs
           </Link>
-          <Link href="/" className="hover:text-primary transition-colors">
+          <Link
+            href="/find-companies"
+            className="hover:text-primary transition-colors"
+          >
             Browse Companies
           </Link>
         </div>

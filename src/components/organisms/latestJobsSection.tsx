@@ -11,7 +11,7 @@ export function LatestJobsSection() {
           <div key={item} className="col-span-1">
             <CardLatesJob
               image="/images/company2.png"
-              jobTitle="UI/UX Designer"
+              roles="UI/UX Designer"
               companyCategory="Design"
               location="Indonesia, Jakarta"
               href="/"

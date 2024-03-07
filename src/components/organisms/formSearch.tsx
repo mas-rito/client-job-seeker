@@ -10,6 +10,7 @@ import {
   SelectValue,
 } from "../ui/select";
 import { Button } from "../ui/button";
+import { LOCATION_OPTIONS } from "@/constants";
 type Props = {};
 export function FormSearch(props: Props) {
   return (
@@ -26,9 +27,11 @@ export function FormSearch(props: Props) {
               <SelectValue placeholder="Location" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="light">Light</SelectItem>
-              <SelectItem value="dark">Dark</SelectItem>
-              <SelectItem value="system">System</SelectItem>
+              {LOCATION_OPTIONS.map((item: string, i: number) => (
+                <SelectItem key={i} value={item}>
+                  {item}
+                </SelectItem>
+              ))}
             </SelectContent>
           </Select>
         </div>

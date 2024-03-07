@@ -5,18 +5,13 @@ import Link from "next/link";
 import * as React from "react";
 import { Badge } from "../ui/badge";
 import { Separator } from "../ui/separator";
+import { Job } from "@/types/job";
 type Props = {
-  image: string;
-  jobTitle: string;
-  companyCategory: string;
-  location: string;
-  href: string;
-  jobType: string;
   skills: string[];
-};
+} & Job;
 export function CardLatesJob({
   image,
-  jobTitle,
+  roles,
   companyCategory,
   location,
   href,
@@ -29,7 +24,7 @@ export function CardLatesJob({
         <Image src={image} alt="logo" width={60} height={60} />
       </div>
       <div>
-        <h2 className="text-xl font-semibold">{jobTitle}</h2>
+        <h2 className="text-xl font-semibold">{roles}</h2>
         <div className="flex items-center text-muted-foreground mb-2">
           <p className="text-xs">{companyCategory}</p>
           <Dot />

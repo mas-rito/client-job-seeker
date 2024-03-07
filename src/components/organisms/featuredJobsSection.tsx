@@ -11,9 +11,9 @@ export function FeaturedJobsSection() {
         {[1, 2, 3].map((item) => (
           <div key={item} className="col-span-1">
             <CardJob
-              company="/images/company.png"
+              image="/images/company.png"
               jobType="Full Time"
-              jobTitle="Frontend Developer"
+              roles="Frontend Developer"
               companyCategory="Technology"
               location="Indonesia, Pontianak"
               desc="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde esse
